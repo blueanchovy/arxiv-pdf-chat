@@ -23,7 +23,6 @@ async function loadPdfFromUrl(url: string): Promise<Buffer> {
     responseType: "arraybuffer",
   });
   return response.data;
-  //   return Buffer.from(response.data);
 }
 
 async function convertPdfToDocuments(pdf: Buffer): Promise<Array<Document>> {
